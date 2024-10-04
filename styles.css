@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+body{
+    background-color: black;
+}
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: rgba(255, 252, 252, 0.144) 0px 15px 25px, rgba(180, 180, 180, 0.253) 0px 5px 10px;
+}
+.container h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+form input{
+   width: 500px;
+   outline: none;
+    padding: 10px 5px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    font-size: 14px;
+}
+form button {
+    padding: 10px 17px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.products_info  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.products_info .products_result  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+    padding: 20px;
+    box-shadow: rgba(255, 255, 255, 0.144) 0px 15px 25px, rgba(253, 253, 253, 0.486) 0px 5px 10px;
+    border-radius: 4px;
+}
+.products_info .products_result:hover{
+    transform: scale(1.1);
+    
+}
+.products_info .products_result img {
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+}
+.products_info .products_result h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(236, 0, 0, 0.877);
+    font-weight: bold;
+}
+.products_info .products_result p {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 12px;
+}
+.message_atencion {
+    color: red;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.created_by {
+    color: rgb(109, 105, 105);
+    text-align: center;
+    font-size: 12px;
+    margin-top: 4px;
+}
+canvas{
+    margin-top: 30px;
+}
